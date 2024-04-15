@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header 스타일 */
+header {
+    background-image: url(../images/headerbg.png); /* 배경 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+/* Main 스타일 */
+main {
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 90%; /* 브라우저의 90%만큼의 너비를 가짐 */
+    max-width: 960px; /* 최대 너비를 960px로 제한 */
+    padding: 20px;
+    margin: auto;
+    margin-top: -40px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#left_box, #right_box {
+    width: calc(45% - 10px); /* main의 40%-10px만큼의 너비를 가짐 */
+    max-width: 450px; /* 최대 너비를 450px로 제한 */
+    height: 200px;
+    border-style: dotted;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+
+#bottom_box {
+    clear: both;
+    width: 50%; /* main의 50%만큼의 너비를 가짐 */
+    max-width: 700px;
+    height: 70px;
+    border-style: dotted;
+    margin-bottom: 20px; /* 아래쪽 여백 추가 */
+    position: relative;
+    transform: translateX(50%);
+    display: flex; /* 자식 요소들을 플렉스 컨테이너로 설정 */
+    justify-content: center; /* 자식 요소들을 수평 중앙으로 정렬 */
+    align-items: center; 
+}
+#button_showmore{
+    margin: 10px;
+    width: 40%;
+    height: auto;
+}
+
+#button_submit{
+    margin: 10px;
+    width: 40%;
+    height: auto;
+}
+
+/* Footer 스타일 */
+footer{
+    background-color: gray;
+    color:#fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer img{
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+    position: fixed;
+}
