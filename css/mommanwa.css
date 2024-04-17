@@ -3,6 +3,13 @@ body {
     margin: 0;
     padding: 0;
 }
+.reservCompleted_body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+}
 
 /* Header 스타일 */
 header {
