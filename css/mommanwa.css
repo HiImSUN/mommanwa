@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+main{
+    padding-bottom: 100px;
+}
 /* Header 스타일 */
 header {
     background-image: url(../images/headerbg.png); /* 배경 이미지 경로 */
@@ -11,14 +13,36 @@ header {
     background-size: cover;
     color: #fff;
     padding: 40px;
+    padding-top: 10px;
 }
-/* Main 스타일 */
-main {
+.navbar {
+    display: flex;
+    align-items: center; /* 요소들을 수직으로 가운데 정렬합니다. */
+    justify-content: space-between; /* 요소들 사이의 여백을 최대화하여 왼쪽과 오른쪽에 정렬합니다. */
+    margin-top: 0;
+}
+
+.logo {
+    border-style: solid;
+    border-radius: 12px;
+    margin-right: 10px; /* 로고와 버튼 사이의 간격을 조정합니다. */
+}
+
+.nav_buttons {
+    display: flex;
+}
+
+.nav_buttons button {
+    margin-left: 10px; /* 각 버튼 사이의 간격을 조정합니다. */
+}
+
+/* form 스타일 */
+form {
     background-color: whitesmoke;
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; /* 그림자 */
     width: 90%; /* 브라우저의 90%만큼의 너비를 가짐 */
     max-width: 960px; /* 최대 너비를 960px로 제한 */
     padding: 20px;
@@ -29,16 +53,29 @@ main {
     flex-wrap: wrap;
 }
 
+.box{
+    display: inline-block;
+    vertical-align: top;
+}
+.select_bar{
+    width: 80%;
+}
+.select_bar option{
+    width: 100%;
+}
 
 #left_box, #right_box {
     width: calc(45% - 10px); /* main의 40%-10px만큼의 너비를 가짐 */
     max-width: 450px; /* 최대 너비를 450px로 제한 */
-    height: 200px;
+    height: 100%;
     border-style: dotted;
     margin:auto;
     margin-bottom: 20px;
 }
 
+input, label, p {
+    margin: 7px 0;
+}
 
 #bottom_box {
     clear: both;
@@ -51,12 +88,17 @@ main {
     transform: translateX(50%);
     display: flex; /* 자식 요소들을 플렉스 컨테이너로 설정 */
     justify-content: center; /* 자식 요소들을 수평 중앙으로 정렬 */
-    align-items: center; 
+    align-items: center;
 }
-#button_showmore{
-    margin: 10px;
-    width: 40%;
-    height: auto;
+.hidden_box{
+    display: none;
+}
+/* 더보기 버튼 */
+.show_more {
+    cursor: pointer;
+}
+.show_more:checked ~ .hidden_box{
+    display:block;
 }
 
 #button_submit{
@@ -65,6 +107,64 @@ main {
     height: auto;
 }
 
+/* 서비스 소개 */
+.service_intro{
+    width: 95%; /* 브라우저의 90%만큼의 너비를 가짐 */
+    max-width: 1100px; /* 최대 너비를 960px로 제한 */
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
+}
+span{
+    color:#0085FF;
+}
+.service_intro p{
+    color:rgb(74, 74, 74)
+}
+.service_intro_comment{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+}
+.service_box{
+    width: 300px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px 2px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px;
+}
+
+/* 리뷰 */
+.review_intro{
+    width: 95%; /* 브라우저의 90%만큼의 너비를 가짐 */
+    max-width: 1000px; /* 최대 너비를 960px로 제한 */
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
+}
+.review_intro_comment{
+    text-align: center;
+}
+.review_box{
+    font-size: 12px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px 2px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 7px;
+}
+b{
+    color: #0085FF;
+}
+#review_box_next{
+    width: 12px;
+    padding: 0;
+}
 /* Footer 스타일 */
 footer{
     background-color: gray;

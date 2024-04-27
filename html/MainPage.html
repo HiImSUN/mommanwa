@@ -10,14 +10,16 @@
 <body class = main_page>
     <!-- 헤더 시작 -->
     <header>
-        <nav>
-            <img src="../images/logo.png" alt="logo" style="top: 3%; position: fixed; border-style: solid; border-radius: 12px;">
-            <div style="top: 3%; right: 3%; position: fixed;">
-            <button>테스트</button>
-            <button>버튼</button>
+        <nav class="navbar">
+            <img src="../images/logo.png" alt="logo" class="logo">
+            <div class="nav_buttons">
+                <button>숙소 등록</button>
+                <button>고객센터</button>
+                <button>채팅</button>
+                <button>내 정보</button>
             </div>
         </nav>
-    <br><br><br>
+    <br><br>
     <div>
         <h2>여러분의 여행,<br>예약부터 교통까지 한번에!</h4>
         </div>
@@ -25,21 +27,108 @@
     <!-- 헤더 끝 -->
     <!-- 메인 시작 -->
     <main>
-        <div id="left_box">
-            <p>출발지 입력</p>
+     <form action="???page.html" method="post"> <!-- 이동할 페이지 지정하기 -->
+        <div class="box" id="left_box">
+            <p>출발지</p>
             <input type="text" placeholder="출발 장소를 입력해 주세요">
-            <p>도착지 입력</p>
+            <p>도착지</p>
             <input type="text" placeholder="도착 장소를 입력해 주세요">
-            
-            
+            <p>숙소 종류</p>
+            <select name="accomodation_type" id="accomodation_type" class="select_bar">
+                <option value="pension">펜션</option>
+                <option value="poolvilla">풀빌라</option>
+                <option value="resort">리조트</option>
+            </select>
         </div>
-        <div id="right_box">
-            
+        <div class="box" id="right_box">
+            <p>여행 일정</p>
+            <label for="departure_date">출발 날짜:</label>
+            <input type="date" id="departure_date" name="departure_date">
+            <label for="arrival_date">도착 날짜:</label>
+            <input type="date" id="arrival_date" name="arrival_date">
+            <p>인원</p>
+            <input type="number" min="1" max="100" class="select_bar">
+            <p>여행 목적</p>
+            <select name="travel_purpose" id="travel_purpose" class="select_bar">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
         </div>
-        <div id="bottom_box">
-            
-            <button id="button_submit">제출</button>
+        <div class="box" id="bottom_box">
+            <button id="button_submit">숙소 역경매 신청</button>
         </div>
+     </form>
+    
+     <div class="service_intro">
+        <div class="service_intro_comment">
+            <h2><span>몸만와</span>만의 서비스</h2>
+            <p>고객님의 경제적, 시간적 편의를 모두 보장하기 위해 늘 최선을 다하고 있습니다</p>
+        </div>
+        <div class="container">
+            <div class="service_box" id="service_box_left">
+                <img src="../images/icon1.png" alt="icon1">
+                <h3>역경매 시스템</h3>
+                <p>이용자가 제시한 조건에 맞춰<br>숙박업체에서 가격 제시</p>
+            </div>
+            <div class="service_box" id="service_box_middle">
+                <img src="../images/icon2.png" alt="icon2">
+                <h3>다양한 부가서비스</h3>
+                <p>음식, 술부터 놀이용품, 수영장 등<br>단체여행에 필요한 다양한 서비스 제공</p>
+            </div>
+            <div class="service_box" id="service_box_right">
+                <img src="../images/icon3.png" alt="icon3">
+                <h3>교통 연계 상품</h3>
+                <p>대표적 버스대절 '올버스'와 연계하여<br>더욱 저렴하게 교통 제공</p>
+            </div>
+        </div>
+     </div>
+<!-- review -->
+     <div class="review_intro">
+        <div class="review_intro_comment">
+            <h2>고객 후기</h2>
+            <p>소수 단체부터 다수 단체까지 다양한 서비스를 경험해본 고객님들의 진짜 후기!</p>
+        </div>
+        <div class="container">
+            <div class="review_box" id="review_box_left">
+                <h3>가성비 갑! 편의성 갑!</h3>
+                <img src="../images/fivestars.png" alt="fivestars">
+                <p>이용 목적 : MT</p>
+                <p>방문 장소 : 을왕리펜션 자니노니</p>
+                <p>방문 인원 : 15명</p><br>
+                <p>편의성 :<b> 매우 만족</b> 가격 : <b> 매우 만족</b> 숙소 :<b> 매우 만족</b></p>
+                <p>가격 대비 편의성이 탁월한 숙소였습니다.
+                    <br>필요한 모든 것이 갖춰져 있어 편안한 여행을
+                    <br>즐길 수 있었습니다.
+                </p>
+            </div>
+            <div class="review_box" id="review_box_middle">
+                <h3>가성비 갑! 편의성 갑!</h3>
+                <img src="../images/fivestars.png" alt="fivestars">
+                <p>이용 목적 : MT</p>
+                <p>방문 장소 : 을왕리펜션 자니노니</p>
+                <p>방문 인원 : 15명</p><br>
+                <p>편의성 :<b> 매우 만족</b> 가격 : <b> 매우 만족</b> 숙소 :<b> 매우 만족</b></p>
+                <p>가격 대비 편의성이 탁월한 숙소였습니다.
+                    <br>필요한 모든 것이 갖춰져 있어 편안한 여행을
+                    <br>즐길 수 있었습니다.
+                </p>
+            </div>
+            <div class="review_box" id="review_box_right">
+                <h3>가성비 갑! 편의성 갑!</h3>
+                <img src="../images/fivestars.png" alt="fivestars">
+                <p>이용 목적 : MT</p>
+                <p>방문 장소 : 을왕리펜션 자니노니</p>
+                <p>방문 인원 : 15명</p><br>
+                <p>편의성 :<b> 매우 만족</b> 가격 : <b> 매우 만족</b> 숙소 :<b> 매우 만족</b></p>
+                <p>가격 대비 편의성이 탁월한 숙소였습니다.
+                    <br>필요한 모든 것이 갖춰져 있어 편안한 여행을
+                    <br>즐길 수 있었습니다.
+                </p>
+            </div>
+            <div class="review_box" id="review_box_next"></div>
+        </div>
+     </div>
     </main>
     <!-- 메인 끝 -->
     <footer>
