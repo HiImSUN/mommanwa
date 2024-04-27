@@ -6,6 +6,14 @@ body {
 main{
     padding-bottom: 100px;
 }
+.reservCompleted_body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+}
+
 /* Header 스타일 */
 header {
     background-image: url(../images/headerbg.png); /* 배경 이미지 경로 */
