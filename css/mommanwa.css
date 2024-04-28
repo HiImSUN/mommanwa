@@ -64,38 +64,90 @@ form {
     width: 95%;
     height: 25px;
 }
-option{
-    height: 25px;
+.box #travel_pupose{
+    font-size: 40px;
+    height: 90px;
 }
+
 .box{
     display: inline-block;
     vertical-align: top;
 }
 .half_length_input{
-    width: 48%;
+    width: 120px;
     height: 25px;
+    margin-right: 10px;
 }
 
 #left_box, #right_box {
     width: calc(45% - 10px); /* main의 40%-10px만큼의 너비를 가짐 */
     max-width: 450px; /* 최대 너비를 450px로 제한 */
     height: 100%;
-    border-style: dotted;
     margin:auto;
     margin-bottom: 20px;
     margin-top: 0;
 }
+.box p{
+    margin-bottom: 0px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 15px;
+}
+input, label{
+    margin: 15px 0;
 
-input, label, p {
-    margin: 7px 0;
+}
+#right_box input{
+    text-align: center;
+}
+#travel_purpose, #accomodation_type{
+    text-align: center;
+    text-align-last: center;
+    height: 30px;
+}
+
+.radio-2 {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+}
+.radio-2 input[type=radio]{
+    display: none;
+}
+.radio-2 input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 25px;
+    width: 49.5%;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.radio-2 input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.radio-2 input[type=radio]:checked+label{
+    background-color: #7ba4dd;
+    color: #fff;
+}
+.travel_expense p{
+    margin-top: 2px;
+}
+.travel_expense input{
+    width: 60%;
 }
 
 #bottom_box {
     clear: both;
-    width: 50%; /* main의 50%만큼의 너비를 가짐 */
-    max-width: 700px;
-    height: 70px;
-    border-style: dotted;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
     margin-bottom: 20px; /* 아래쪽 여백 추가 */
     position: relative;
     transform: translateX(50%);
@@ -103,14 +155,16 @@ input, label, p {
     justify-content: center; /* 자식 요소들을 수평 중앙으로 정렬 */
     align-items: center;
 }
-.hidden_box{
-    display: none;
-}
 
-#button_submit{
-    margin: 10px;
-    width: 40%;
+.button_submit{
+    background-color: #0085FF;
+    color: white;
+    border-radius: 8px;
+    width: 230px;
     height: auto;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px;
 }
 
 /* 서비스 소개 */
@@ -121,7 +175,7 @@ input, label, p {
     margin: auto;
     margin-top: 40px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
 }
-span{
+.service_intro span{
     color:#0085FF;
 }
 .service_intro p{
@@ -148,8 +202,8 @@ span{
 
 /* 리뷰 */
 .review_intro{
-    width: 95%; /* 브라우저의 90%만큼의 너비를 가짐 */
-    max-width: 1000px; /* 최대 너비를 960px로 제한 */
+    width: 1128px;
+    min-width: 700px;
     padding: 20px;
     margin: auto;
     margin-top: 20px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
@@ -228,11 +282,11 @@ footer img{
   }
   
   input:checked + .slider {
-    background-color: #1da575;
+    background-color: #7ba4dd;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #1da575;
+    box-shadow: 0 0 1px #7ba4dd;
   }
   
   input:checked + .slider:before {
@@ -249,10 +303,12 @@ footer img{
     border-radius: 50%;
   }
 
-
   .convenience_facilities {
     display: flex;
     flex-direction: column; /* 편의시설 그룹들을 세로로 배치 */
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 15px;
 }
 
 .convenience_facility_group {

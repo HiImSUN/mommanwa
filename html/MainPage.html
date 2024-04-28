@@ -40,8 +40,8 @@
                 <option value="poolvilla">풀빌라</option>
                 <option value="resort">리조트</option>
             </select>
+            <p>편의 시설</p>
             <div class="convenience_facilities">
-                <p>편의 시설</p>
                 <div class="convenience_facility_group">
                     <div class="convenience_facility">
                         노래방
@@ -99,25 +99,33 @@
             <input type="date" class="half_length_input" id="departure_date" name="departure_date">
             </div>
             <div>
-            <label for="arrival_date">도착 날짜:</label>
+            <label style="margin-right: 10px;" for="arrival_date">도착 날짜:</label>
             <input type="date" class="half_length_input" id="arrival_date" name="arrival_date">
             </div>
             </div>
             <p>인원</p>
-            <input type="number" class="full_length_input" min="1" max="100">
+            <input type="number" class="full_length_input" placeholder="인원을 골라주세요" min="1" max="100">
             <p>여행 목적</p>
-            <select name="travel_purpose" class="full_length_input" id="travel_purpose">
+            <select style="height: 90px;" name="travel_purpose" class="full_length_input" id="travel_purpose" >
                 <option value="1">MT</option>
                 <option value="2">야유회</option>
                 <option value="3">자유여행</option>
-                <option value="3">워크샵</option>
-                <option value="3">단체행사</option>
+                <option value="4">워크샵</option>
+                <option value="5">단체행사</option>
             </select>
-            <!-- TODO : 교통제공 -->
+            <p>교통제공</p>
+            <div class="radio-2">
+                <input type="radio" id="radio_opt1" name="shop"><label for="radio_opt1">신청</label>
+                <input type="radio" id="radio_opt2" name="shop"><label for="radio_opt2">미신청</label>
+           </div>
+            <div class="travel_expense">
+            <div style="display: flex; align-items: center;"><p>여행 경비</p><img src="../images/info_icon.png" alt="information"></div>
+            <input type="number" min="10" step="10" placeholder="10만원 단위로 여행 경비를 설정해 주세요.">  (만원)
+            </div>
         </div>
         <!-- BOTTOM BOX -->
         <div class="box" id="bottom_box">
-            <button id="button_submit">숙소 역경매 신청</button>
+            <button class="button_submit">숙소 역경매 신청</button>
         </div>
      </form>
     
