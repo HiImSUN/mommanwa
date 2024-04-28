@@ -28,33 +28,94 @@
     <!-- 메인 시작 -->
     <main>
      <form action="???page.html" method="post"> <!-- 이동할 페이지 지정하기 -->
+        <!-- LEFT BOX -->
         <div class="box" id="left_box">
             <p>출발지</p>
-            <input type="text" placeholder="출발 장소를 입력해 주세요">
+            <input type="text" class="full_length_input" placeholder="출발 장소를 입력해 주세요">
             <p>도착지</p>
-            <input type="text" placeholder="도착 장소를 입력해 주세요">
+            <input type="text" class="full_length_input" placeholder="도착 장소를 입력해 주세요">
             <p>숙소 종류</p>
-            <select name="accomodation_type" id="accomodation_type" class="select_bar">
+            <select name="accomodation_type" class="full_length_input" id="accomodation_type">
                 <option value="pension">펜션</option>
                 <option value="poolvilla">풀빌라</option>
                 <option value="resort">리조트</option>
             </select>
+            <div class="convenience_facilities">
+                <p>편의 시설</p>
+                <div class="convenience_facility_group">
+                    <div class="convenience_facility">
+                        노래방
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="convenience_facility">
+                        편의점
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="convenience_facility">
+                        바베큐장
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="convenience_facility_group">
+                    <div class="convenience_facility">
+                        족구장
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="convenience_facility">
+                        탁구장
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="convenience_facility">
+                        트램펄린
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- RIGHT BOX -->
         <div class="box" id="right_box">
             <p>여행 일정</p>
+            <div style="justify-items: center; justify-content: space-between; display: flex; ">
+            <div>
             <label for="departure_date">출발 날짜:</label>
-            <input type="date" id="departure_date" name="departure_date">
+            <input type="date" class="half_length_input" id="departure_date" name="departure_date">
+            </div>
+            <div>
             <label for="arrival_date">도착 날짜:</label>
-            <input type="date" id="arrival_date" name="arrival_date">
+            <input type="date" class="half_length_input" id="arrival_date" name="arrival_date">
+            </div>
+            </div>
             <p>인원</p>
-            <input type="number" min="1" max="100" class="select_bar">
+            <input type="number" class="full_length_input" min="1" max="100">
             <p>여행 목적</p>
-            <select name="travel_purpose" id="travel_purpose" class="select_bar">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+            <select name="travel_purpose" class="full_length_input" id="travel_purpose">
+                <option value="1">MT</option>
+                <option value="2">야유회</option>
+                <option value="3">자유여행</option>
+                <option value="3">워크샵</option>
+                <option value="3">단체행사</option>
             </select>
+            <!-- TODO : 교통제공 -->
         </div>
+        <!-- BOTTOM BOX -->
         <div class="box" id="bottom_box">
             <button id="button_submit">숙소 역경매 신청</button>
         </div>
@@ -134,7 +195,7 @@
     <footer>
         <!-- <img src="images/footer.png" alt="footerimg"> -->
         <p>&copy; 2024 우아톤 | 2조 | All rights reserved. | 대표번호: 123-456-7890</p>
-        <p>To Go Our GitHub</p>
+        <a href="https://github.com/HiImSUN/mommanwa.git" target="_blank" rel="noopener noreferrer">Click Here To Go Our GitHub</p>
     </footer>
 </body>
 </html>

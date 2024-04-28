@@ -60,16 +60,20 @@ form {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.full_length_input{
+    width: 95%;
+    height: 25px;
+}
+option{
+    height: 25px;
+}
 .box{
     display: inline-block;
     vertical-align: top;
 }
-.select_bar{
-    width: 80%;
-}
-.select_bar option{
-    width: 100%;
+.half_length_input{
+    width: 48%;
+    height: 25px;
 }
 
 #left_box, #right_box {
@@ -79,6 +83,7 @@ form {
     border-style: dotted;
     margin:auto;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 input, label, p {
@@ -100,13 +105,6 @@ input, label, p {
 }
 .hidden_box{
     display: none;
-}
-/* 더보기 버튼 */
-.show_more {
-    cursor: pointer;
-}
-.show_more:checked ~ .hidden_box{
-    display:block;
 }
 
 #button_submit{
@@ -188,4 +186,81 @@ footer img{
     height: auto;
     bottom: 0;
     position: fixed;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+    margin-left: 3px;
+    margin-right: 18px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #1da575;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #1da575;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .convenience_facilities {
+    display: flex;
+    flex-direction: column; /* 편의시설 그룹들을 세로로 배치 */
+}
+
+.convenience_facility_group {
+    display: flex; /* 편의시설 그룹들을 가로로 배치 */
+}
+
+.convenience_facility {
+    display: flex; /* 라벨과 편의시설을 가로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+    margin-right: 20px; /* 편의시설 사이의 간격 조정 */
 }
