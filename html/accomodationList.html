@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소 리스트</title>
+    <link rel="stylesheet" href="../css/accomodationList.css">
+</head>
+
+<body class = accomodation_list>
+    <!-- 헤더 시작 -->
+    <header style="background-color: #ffffff;">
+        <nav style="padding-inline: 80px;">
+            <img src="../images/logo.png" alt="logo" style="top: 3%; position: fixed; border-style: solid; border-radius: 12px;">
+            <div style="top: 3%; right: 3%; position: fixed;">
+                <button>숙소 등록</button>
+                <button>고객센터</button>
+                <button>경매 현황</button>
+                <button>멋쟁이 사자</button>
+            </div>
+        </nav>
+    </header>
+    <!-- 헤더 끝 -->
+
+    <div class="wrapper">
+        <!-- 왼쪽 열 -->
+        <div class="left-column">
+            <div class="toggle-item">
+                <p>예약 경비</p>
+                <button class="toggle-button">
+                    <img src = "../images/Vector 9 (Stroke).svg"/>
+                </button>
+            </div>
+            <div class="toggle-item">
+                <p>숙소 컨셉</p>
+                <button class="toggle-button">
+                    <img src = "../images/Vector 9 (Stroke).svg"/>
+                </button>
+            </div>
+            <div class="toggle-item">
+                <p>버스 종류</p>
+                <button class="toggle-button">
+                    <img src = "../images/Vector 9 (Stroke).svg"/>
+                </button>
+            </div>
+            <div class="toggle-item">
+                <p>금액 조정 여부</p>
+                <button class="toggle-button">
+                    <img src = "../images/Vector 9 (Stroke).svg"/>
+                </button>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <!-- 메인 컨텐츠 -->
+            <div class>
+                <!-- 메인 컨텐츠 내용 -->
+                <p>OOO님 요구사항</p>
+                <!-- 기타 컨텐츠 -->
+                <div class="filter">
+                    <button>출발지로부터 50km 이내</button>
+                    <button>5월 6일~7일</button>
+                    <button>40명</button>
+                    <button>펜션</button>
+                    <button>노래방</button>
+
+                </div>
+            </div>
+            <br><br><br>
+            <!-- 숙소 리스트 -->
+            <div class="container">
+                <div class="list_filter">
+                    <div><img src="../images/map.png" alt="map">지도 보기</div>
+                    <div><img src="../images/filterIcon.png" alt="filter">등록순</div>
+                </div>
+                <div class="accomodation" style="display: flex;">
+                    <div><img src="../images/accom1.png"></div>
+                    <div style="margin-left: 20px;">
+                        <h3>대부도 나비 풀빌라</h3>
+                        <p>출발지로부터 37.4km(약 50분 소요)</p>
+                        <table>
+                            <tr>
+                                <td>풀빌라 펜션</td>
+                                <td>4.8</td>
+                            </tr>
+                            <tr>
+                                <td>편의시설</td>
+                                <td><div class="filter">
+                                    <button>출발지로부터 50km 이내</button>
+                                    <button>5월 6일~7일</button>
+                                    <button>40명</button>
+                                    <button>펜션</button>
+                                    <button>노래방</button>
+                                </div></td>
+                            </tr>
+                            <tr>
+                                <td>차량 종류</td>
+                                <td>21인승 대형 프리미엄 버스</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="price_box">
+                        <div class="price"><span>1,050,000</span>원</div>
+                        <p>금액 조정 가능</p>
+                        <br><br><br>
+                        <a href="" class="button_submit">상품 상세 보기</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </main>
+<footer>
+    <!-- <img src="images/footer.png" alt="footerimg"> -->
+    <p>&copy; 2024 우아톤 | 2조 | All rights reserved. | 대표번호: 123-456-7890</p>
+    <a href="https://github.com/HiImSUN/mommanwa.git" target="_blank" rel="noopener noreferrer">Click Here To Go Our GitHub</p>
+</footer>
+</body>
+</html>

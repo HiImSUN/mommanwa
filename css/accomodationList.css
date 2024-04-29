@@ -1,0 +1,145 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Header 스타일 */
+
+header {
+    padding: 40px;
+    top: 0;
+    width: 100%;
+    color: #EFEFEF;
+}
+.navbar {
+    display: flex;
+    align-items: center; /* 요소들을 수직으로 가운데 정렬합니다. */
+    justify-content: space-between; /* 요소들 사이의 여백을 최대화하여 왼쪽과 오른쪽에 정렬합니다. */
+    margin-top: 0;
+}
+
+.logo {
+    border-style: solid;
+    border-radius: 12px;
+    margin-right: 10px; /* 로고와 버튼 사이의 간격을 조정합니다. */
+}
+
+.nav_buttons {
+    display: flex;
+}
+
+.nav_buttons button {
+    margin-left: 10px; /* 각 버튼 사이의 간격을 조정합니다. */
+}
+
+/* 전체 레이아웃을 flex로 설정 */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+/* 왼쪽 열 스타일 */
+.left-column {
+    width: 250px; /* 왼쪽 열 너비 */
+    padding: 20px;
+    padding-top: 100px;
+}
+
+
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 24px; /* 버튼 크기 조절 */
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px; /* 간격 조정 */
+}
+
+.filter button{
+    background-color: #f0f8ff; /* 버튼의 배경색 */
+    border: 2px solid #d1e8ff; /* 테두리 색상과 두께 */
+    color: #333; /* 글자 색상 */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    padding-right: 50px;
+    align-items: end;
+}
+.container{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.list_filter{
+    margin-bottom: 20px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px darkgray;
+}
+.list_filter div{
+    display: flex;
+    align-items: center;
+}
+.container table{
+    border-spacing: 10px 10px;
+}
+.price_box{
+    margin-left: auto;
+    margin-right: 50px;
+    align-items: center;
+    justify-items: center;
+}
+.price_box span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.price_box p{
+    color: #0085FF;
+    margin-left: auto;
+    text-align: right;
+}
+.price{
+    text-align: right;
+}
+.button_submit{
+    background-color: #0085FF;
+    color: white;
+    border-radius: 8px;
+    width: 230px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Footer 스타일 */
+footer{
+    background-color: gray;
+    color:#fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer img{
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+    position: fixed;
+}
+footer a{
+    text-decoration: none;
+    font-weight: 600;
+}

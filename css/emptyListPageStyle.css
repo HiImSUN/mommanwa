@@ -35,13 +35,22 @@ header {
     /* 기존 스타일 유지 */
 }
 
-footer {
-    background-color: #EFEFEF;
+/* Footer 스타일 */
+footer{
+    background-color: gray;
+    color:#fff;
     padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin-top: auto; /* 페이지의 마지막 요소로 footer를 고정 */
 }
-
+footer img{
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+    position: fixed;
+}
 .toggle-button {
     background: none;
     border: none;

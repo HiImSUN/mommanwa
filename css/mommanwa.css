@@ -45,7 +45,7 @@ header {
 }
 
 /* form 스타일 */
-form {
+.form {
     background-color: whitesmoke;
     border-style: solid;
     border-width: 2px;
@@ -165,12 +165,13 @@ input, label{
     font-size: 20px;
     font-weight: 500;
     padding: 8px;
+    text-align: center;
 }
 
 /* 서비스 소개 */
 .service_intro{
     width: 95%; /* 브라우저의 90%만큼의 너비를 가짐 */
-    max-width: 1100px; /* 최대 너비를 960px로 제한 */
+    max-width: 1128px;
     padding: 20px;
     margin: auto;
     margin-top: 40px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
@@ -224,22 +225,6 @@ b{
 #review_box_next{
     width: 12px;
     padding: 0;
-}
-/* Footer 스타일 */
-footer{
-    background-color: gray;
-    color:#fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-footer img{
-    max-width: 100%;
-    height: auto;
-    bottom: 0;
-    position: fixed;
 }
 
 .switch {
@@ -319,4 +304,25 @@ footer img{
     display: flex; /* 라벨과 편의시설을 가로로 배치 */
     align-items: center; /* 가운데 정렬 */
     margin-right: 20px; /* 편의시설 사이의 간격 조정 */
+}
+
+/* Footer 스타일 */
+footer{
+    background-color: gray;
+    color:#fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer img{
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+    position: fixed;
+}
+footer a{
+    text-decoration: none;
+    font-weight: 600;
 }
