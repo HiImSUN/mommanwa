@@ -6,13 +6,6 @@ body {
 main{
     padding-bottom: 100px;
 }
-.reservCompleted_body {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-    width: 60%;
-}
 
 /* Header 스타일 */
 header {
@@ -325,4 +318,19 @@ footer img{
 footer a{
     text-decoration: none;
     font-weight: 600;
+#reservCompleted_button 
+{
+    padding-inline-start: 60px;
+    padding-inline-end: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#reservCompleted_body {
+    display: flex; /* 자식 요소들을 플렉스 컨테이너로 설정 */
+    justify-content: center; /* 자식 요소들을 수평 중앙으로 정렬 */
+    align-items: center;
+    text-align: center;
+    text-align-last: center;
 }
