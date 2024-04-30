@@ -6,13 +6,13 @@
   }
 a:link {
     text-decoration: none;
-    color: inherit;
 }
 a:visited {
     text-decoration: none;
+}
+header a{
     color: inherit;
 }
-
 body, html {
     height: 100%;
     margin: 0;
