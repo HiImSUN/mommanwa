@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reservComplete</title>
-    <link rel="stylesheet" href="../css/mommanwa.css">
+    <link rel="stylesheet" href="../css/reservationCompletedPage.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img src="../images/logo.png" class="logo">
+            <a href="mainPage.html">
+                <img src="../images/logo.png" alt="logo" class="logo">
+            </a>
             <div class="nav_buttons">
                 <button>숙소 등록</button>
                 <button>고객센터</button>
                 <button>채팅</button>
-                <button>멋쟁이사자</button>
+                <button>내 정보</button>
             </div>
-        </nav> 
+        </nav>
     </header>
     <br><br><br><br><br><br><br><br><br><br>
     <main style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
@@ -24,24 +26,23 @@
             <div>
                 <img src="../images/reservationCompletedImg.png" alt="Reservation Completed" class="image_block">
             </div>
-            <div id="reservCompleted_body">
-                <div>
-                    <p>예약이 완료되었습니다!</p>
+            <div class="reservCompleted_body">
+                <div class="reservation_comment">
+                    <h3>예약이 완료되었습니다!</h3>
                     <p>예약취소의 경우, 일주일 이전에 진행해주셔야 합니다!</p>
                 </div>
             </div>
-            <div id="reservCompleted_button">
-                <button class="button_submit">예약내역 확인하기</button>
-                <button class="button_submit">메인으로 돌아가기</button>
+            <div class="reservCompleted_button">
+                <a href="#" class="button_submit1">예약내역 확인하기</a>
+                <a href="mainPage.html" class="button_submit2">메인으로 돌아가기</a>
             </div>
         </div>
     </main>
 
-    <footer id="footer">
+    <footer>
         <!-- <img src="images/footer.png" alt="footerimg"> -->
         <p>&copy; 2024 우아톤 | 2조 | All rights reserved. | 대표번호: 123-456-7890</p>
-        <p>To Go Our GitHub</p>
+        <a href="https://github.com/HiImSUN/mommanwa.git" target="_blank" rel="noopener noreferrer">Click Here To Go Our GitHub</p>
     </footer>
-
 </body>
 </html>

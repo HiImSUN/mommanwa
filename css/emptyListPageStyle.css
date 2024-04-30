@@ -1,6 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", sans-serif;
+    text-decoration-line: none;
+  }
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 body, html {
     height: 100%;
     margin: 0;
+}
+header {
+    padding: 40px;
+    top: 0;
+    width: 100%;
+    color: #EFEFEF;
+}
+.navbar {
+    display: flex;
+    align-items: center; /* 요소들을 수직으로 가운데 정렬합니다. */
+    justify-content: space-between; /* 요소들 사이의 여백을 최대화하여 왼쪽과 오른쪽에 정렬합니다. */
+    margin-top: 0;
+    margin-right: 50px;
+}
+
+.logo {
+    border-style: solid;
+    border-radius: 12px;
+    margin-right: 10px; /* 로고와 버튼 사이의 간격을 조정합니다. */
+}
+
+.nav_buttons {
+    display: flex;
+    margin-right: 30px;
+}
+
+.nav_buttons button {
+    margin-left: 10px; /* 각 버튼 사이의 간격을 조정합니다. */
 }
 
 /* 전체 레이아웃을 flex로 설정 */
@@ -25,9 +68,36 @@ body, html {
     padding: 20px;
     align-items: end;
 }
-
+.comment2 span{
+    color: #0085FF;   
+}
+.comment2{
+    font-size: 20px;
+}
+.comment2 p{
+    margin: 10px;
+    font-size: 12px;
+    color: #747474;
+}
+.cancel_box a{
+    text-decoration: none;
+    color: #FF0000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 120px;
+    border: solid #FF0000 2px;
+    border-radius: 8px;
+}
+#skip{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 120px;
+    border: solid black 2px;
+    border-radius: 8px;
+}
 header {
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;

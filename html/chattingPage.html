@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>몸만와(momanwa)</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/chattingPage.css" />
   </head>
   <body>
-    <!-- 로고, 내비게이션 바 -->
-    <header id="main_header" style="padding-top: 10px">
-      <nav id="main_logo">
-        <a href="#"><img src="../images/logo.svg" alt="" /></a>
+    <!-- 헤더 시작 -->
+    <header>
+      <nav class="navbar">
+          <a href="mainPage.html">
+            <img src="../images/logo.png" alt="logo" class="logo">
+          </a>
+          <div class="nav_buttons">
+              <button>숙소 등록</button>
+              <button>고객센터</button>
+              <button>채팅</button>
+              <button>내 정보</button>
+          </div>
       </nav>
-      <nav id="nav_bar">
-        <ul style="list-style: none">
-          <li><a href="#">숙소 등록</a></li>
-          <li><a href="#">고객센터</a></li>
-          <li><a href="#">채팅</a></li>
-          <li><a href="#">멋쟁이사자</a></li>
-        </ul>
-      </nav>
-    </header>
+  </header>
+  <!-- 헤더 끝 -->
+
 
     <main>
       <!-- 좌측 박스 -->
@@ -110,7 +112,7 @@
         </div>
 
         <div class="buttonSet">
-          <a href="#" div class="leftButton">
+          <a href="detailPage.html" div class="leftButton">
             <img src="../images/out.svg" alt="" />
             <p>채팅방 나가기</p>
           </a>
@@ -122,5 +124,11 @@
         </div>
       </div>
     </main>
+    <!-- Footer -->
+    <footer>
+      <!-- <img src="images/footer.png" alt="footerimg"> -->
+      <p>&copy; 2024 우아톤 | 2조 | All rights reserved. | 대표번호: 123-456-7890</p>
+      <a href="https://github.com/HiImSUN/mommanwa.git" target="_blank" rel="noopener noreferrer">Click Here To Go Our GitHub</p>
+  </footer>
   </body>
 </html>

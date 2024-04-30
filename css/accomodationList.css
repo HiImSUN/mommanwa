@@ -1,5 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", sans-serif;
+    box-sizing: border-box;
+    text-decoration-line: none;
+  }
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
 body, html {
-    height: 100%;
     margin: 0;
 }
 
@@ -16,6 +30,7 @@ header {
     align-items: center; /* 요소들을 수직으로 가운데 정렬합니다. */
     justify-content: space-between; /* 요소들 사이의 여백을 최대화하여 왼쪽과 오른쪽에 정렬합니다. */
     margin-top: 0;
+    margin-right: 50px;
 }
 
 .logo {
@@ -26,6 +41,7 @@ header {
 
 .nav_buttons {
     display: flex;
+    margin-right: 30px;
 }
 
 .nav_buttons button {
@@ -35,8 +51,8 @@ header {
 /* 전체 레이아웃을 flex로 설정 */
 .wrapper {
     display: flex;
-    min-height: 100vh;
     flex-direction: row;
+    margin-bottom: 150px;
 }
 
 /* 왼쪽 열 스타일 */
@@ -89,9 +105,33 @@ header {
     display: flex;
     align-items: center;
 }
+.accomodation{
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: solid 1px gray;
+    margin-right: 25px;
+    border-bottom: solid 1px darkgray;
+}
+.accomodation h4{
+    margin: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.accomodation p{
+    margin-left: 7px;
+    color: #747474;
+    font-size: 13px;
+}
 .container table{
     border-spacing: 10px 10px;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
 }
+.table_head{
+    font-weight: 600;
+}
+
 .price_box{
     margin-left: auto;
     margin-right: 50px;
@@ -123,6 +163,32 @@ header {
     text-decoration: none;
 }
 
+.cancel_box{
+    text-align: center;
+    margin-top: 40px;
+}
+.cancel_box div{
+    font-size: 20px;
+}
+.cancel_box span{
+    font-weight: 700;
+}
+.cancel_box p{
+    font-size: 12;
+    color: #747474;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+.cancel_box a{
+    text-decoration: none;
+    color: #FF0000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 120px;
+    border: solid #FF0000 2px;
+    border-radius: 8px;
+}
+
 /* Footer 스타일 */
 footer{
     background-color: gray;
@@ -132,12 +198,6 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
-}
-footer img{
-    max-width: 100%;
-    height: auto;
-    bottom: 0;
-    position: fixed;
 }
 footer a{
     text-decoration: none;

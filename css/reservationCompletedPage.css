@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", sans-serif;
+    text-decoration: none;
+  }
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding-bottom: 100px;
+}
+
+/* Header 스타일 */
+header {
+    background-image: url(../images/headerbg.png); /* 배경 이미지 경로 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+    padding-top: 10px;
+}
+.navbar {
+    display: flex;
+    align-items: center; /* 요소들을 수직으로 가운데 정렬합니다. */
+    justify-content: space-between; /* 요소들 사이의 여백을 최대화하여 왼쪽과 오른쪽에 정렬합니다. */
+    margin-top: 0;
+}
+
+.logo {
+    border-style: solid;
+    border-radius: 12px;
+    margin-right: 10px; /* 로고와 버튼 사이의 간격을 조정합니다. */
+}
+
+.nav_buttons {
+    display: flex;
+}
+
+.nav_buttons button {
+    margin-left: 10px; /* 각 버튼 사이의 간격을 조정합니다. */
+}
+
+/* form 스타일 */
+.form {
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; /* 그림자 */
+    width: 90%; /* 브라우저의 90%만큼의 너비를 가짐 */
+    max-width: 960px; /* 최대 너비를 960px로 제한 */
+    padding: 20px;
+    margin: auto;
+    margin-top: -40px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.full_length_input{
+    width: 95%;
+    height: 25px;
+}
+.box #travel_pupose{
+    font-size: 40px;
+    height: 90px;
+}
+
+.box{
+    display: inline-block;
+    vertical-align: top;
+}
+.half_length_input{
+    width: 120px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#left_box, #right_box {
+    width: calc(45% - 10px); /* main의 40%-10px만큼의 너비를 가짐 */
+    max-width: 450px; /* 최대 너비를 450px로 제한 */
+    height: 100%;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.box p{
+    margin-bottom: 0px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 15px;
+}
+input, label{
+    margin: 15px 0;
+
+}
+#right_box input{
+    text-align: center;
+}
+#travel_purpose, #accomodation_type{
+    text-align: center;
+    text-align-last: center;
+    height: 30px;
+}
+
+.radio-2 {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+}
+.radio-2 input[type=radio]{
+    display: none;
+}
+.radio-2 input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 25px;
+    width: 49.5%;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.radio-2 input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.radio-2 input[type=radio]:checked+label{
+    background-color: #7ba4dd;
+    color: #fff;
+}
+.travel_expense p{
+    margin-top: 2px;
+}
+.travel_expense input{
+    width: 60%;
+}
+
+#bottom_box {
+    clear: both;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* 아래쪽 여백 추가 */
+    position: relative;
+    transform: translateX(50%);
+    display: flex; /* 자식 요소들을 플렉스 컨테이너로 설정 */
+    justify-content: center; /* 자식 요소들을 수평 중앙으로 정렬 */
+    align-items: center;
+}
+
+.button_submit1{
+    background-color: #0085FF;
+    color: white;
+    border-radius: 8px;
+    width: 230px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+}
+.button_submit2{
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius: 8px;
+    width: 230px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* 서비스 소개 */
+.service_intro{
+    width: 95%; /* 브라우저의 90%만큼의 너비를 가짐 */
+    max-width: 1128px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
+}
+.service_intro span{
+    color:#0085FF;
+}
+.service_intro p{
+    color:rgb(74, 74, 74)
+}
+.service_intro_comment{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+}
+.service_box{
+    width: 300px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px 2px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 15px;
+}
+
+/* 리뷰 */
+.review_intro{
+    width: 1128px;
+    min-width: 700px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px; /* 위 아래 여백은 20px이며 좌우는 자동으로 조정 */
+}
+.review_intro_comment{
+    text-align: center;
+}
+.review_box{
+    font-size: 12px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px 2px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 7px;
+}
+b{
+    color: #0085FF;
+}
+#review_box_next{
+    width: 12px;
+    padding: 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+    margin-left: 3px;
+    margin-right: 18px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #7ba4dd;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7ba4dd;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .convenience_facilities {
+    display: flex;
+    flex-direction: column; /* 편의시설 그룹들을 세로로 배치 */
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.convenience_facility_group {
+    display: flex; /* 편의시설 그룹들을 가로로 배치 */
+}
+
+.convenience_facility {
+    display: flex; /* 라벨과 편의시설을 가로로 배치 */
+    align-items: center; /* 가운데 정렬 */
+    margin-right: 20px; /* 편의시설 사이의 간격 조정 */
+}
+
+/* Footer 스타일 */
+footer{
+    background-color: gray;
+    color:#fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.reservCompleted_button 
+{
+    padding-inline-start: 60px;
+    padding-inline-end: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reservCompleted_body {
+    display: flex; /* 자식 요소들을 플렉스 컨테이너로 설정 */
+    justify-content: center; /* 자식 요소들을 수평 중앙으로 정렬 */
+    align-items: center;
+    text-align: center;
+    text-align-last: center;
+}
+.reservation_comment h3{
+    margin: 20px;
+    text-align: center;
+    font-size: 20;
+    font-weight: 800;
+}
+.reservation_comment p{
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #ff0000;
+}

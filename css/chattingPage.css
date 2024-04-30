@@ -5,7 +5,14 @@
   box-sizing: border-box;
   text-decoration-line: none;
 }
-
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 main {
   display: flex;
 }
@@ -22,39 +29,33 @@ tr, th, td {
   /* border : 1px solid rgb(204, 204, 204); */
 }
 
-#main_header {
-  font-family: "Noto Sans KR", sans-serif;
-  width: 1128px;
-  height: 100px;
-  margin: 0 auto;
-  position: relative;
+header {
+  padding: 40px;
+  top: 0;
+  width: 100%;
+  color: #EFEFEF;
+}
+.navbar {
+  display: flex;
+  align-items: center; /* 요소들을 수직으로 가운데 정렬합니다. */
+  justify-content: space-between; /* 요소들 사이의 여백을 최대화하여 왼쪽과 오른쪽에 정렬합니다. */
+  margin-top: 0;
 }
 
-#main_header > #nav_bar {
-  position: absolute;
-  right: 10px;
-  top: 10px;
+.logo {
+  border-style: solid;
+  border-radius: 12px;
+  margin-right: 10px; /* 로고와 버튼 사이의 간격을 조정합니다. */
 }
 
-/* 상단 우측 내비게이션 바 */
-
-#nav_bar > ul {
-  overflow: hidden;
+.nav_buttons {
+  display: flex;
+  margin-right: 30px;
 }
 
-#nav_bar > ul > li {
-  float: left;
+.nav_buttons button {
+  margin-left: 10px; /* 각 버튼 사이의 간격을 조정합니다. */
 }
-
-#nav_bar > ul > li > a {
-  color: black;
-  font-weight: 500;
-  font-size: 14px;
-  display: block;
-  padding: 2px 10px;
-  text-decoration: none;
-}
-
 /* 좌측 박스 */
 
 .chat_list {
@@ -468,4 +469,19 @@ tr, th, td {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+}
+
+/* Footer 스타일 */
+footer{
+    background-color: gray;
+    color:#fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    font-weight: 600;
 }

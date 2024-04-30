@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>몸만와(momanwa)</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/detailPage.css" />
   </head>
   <body>
     <!-- 로고, 내비게이션 바 -->
     <header id="main_header" style="padding-top: 10px">
-      <nav id="main_logo">
-        <a href="#"><img src="../images/logo.svg" alt="" /></a>
-      </nav>
+      <a href="mainPage.html">
+        <img src="../images/logo.png" alt="logo" class="logo">
+      </a>
       <nav id="nav_bar">
         <ul style="list-style: none">
           <li><a href="#">숙소 등록</a></li>
@@ -161,10 +161,16 @@
     </div>
     <!-- 최하단 버튼 -->
     <div class="button">
-      <a href="#" class="chatting"><p>사장님과 대화하기</p></a>
+      <a href="chattingPage.html" class="chatting"><p>사장님과 대화하기</p></a>
       <div class="space24x"></div>
-      <a href="#" class="booking"><p>예약하기</p></a>
+      <a href="reservationCompletedPage.html" class="booking"><p>예약하기</p></a>
     </div>
-    <br />
+    <div class="margin4footer"></div>
+    <!-- Footer -->
+    <footer>
+      <!-- <img src="images/footer.png" alt="footerimg"> -->
+      <p>&copy; 2024 우아톤 | 2조 | All rights reserved. | 대표번호: 123-456-7890</p>
+      <a href="https://github.com/HiImSUN/mommanwa.git" target="_blank" rel="noopener noreferrer">Click Here To Go Our GitHub</p>
+  </footer>
   </body>
 </html>
